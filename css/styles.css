@@ -68,7 +68,7 @@ span {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 6px;
+    margin-top: 2px;
 }
 
 .name-section {
@@ -79,6 +79,7 @@ span {
 }
 
 .news-card {
+    width: 290px;
     background-color: var(--color-grey-light);
     border-radius: 8px;
     margin: 0 10px;
@@ -144,26 +145,28 @@ span {
     color: var(--color-green-life);
     font-size: 24px;
     font-weight: 700;
-    padding-top: 40px;
+    margin: 40px 0 27px;
 }
 
-.card-games {    
+.card-games { 
+    width: 290px;      
     display: flex;
     flex-direction: column;
     align-items: center;   
     box-shadow: 0 0 0.4em var(--color-dark);
     border-radius: 8px;
-    margin: 27px 0 0;                  
+    margin-bottom: 27px;                  
 }
 
 .card-games img {    
-    width: 300px;
+    width: 290px;
     height: 169px;
     border-radius: 8px 8px 0 0;   
        
 }
 
 .card-game-description {
+    width: 290px;       
     background-color: var(--color-whithe);
     display: flex;
     align-items: center;
@@ -175,7 +178,7 @@ span {
     font-size: 18px;
     font-weight: 700;
     color: var(--color-grey);
-    padding: 28px 40px 0;
+    padding: 28px 0 0;
 }
 
 .game-description {
@@ -188,6 +191,106 @@ span {
     color: var(--color-green-life);
     font-size: 36px;
     font-weight: 700;
+    padding-bottom: 15px;
+}
+
+#sign-up {
+    background-color: var(--color-whithe);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 8px;
+    
+}
+
+.ctrl-consoles {
+    width: 290px;
+    height: 600px;
+    background-color: var(--color-grey-light);
+    border-radius: 8px;            
+}
+
+.ctrl-consoles-container {
+        
+}
+
+.user-name-container {
+    padding: 52px 12px 0;
+}
+
+.user-name {
+    border: 1px solid var(--color-grey);               
+    width: 268px;
+    height: 50px;    
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;        
+}
+
+.user-email-container {
+    padding: 20px 12px 20px;
+}
+
+.user-email {
+    border: 1px solid var(--color-grey);               
+    width: 268px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;                   
+}
+
+.games-container {
+    color: var(--color-grey); 
+    font-size: 16px;   
+    font-weight: 400;
+    padding: 0 12px 0;    
+}
+
+.send-email-container {
+    color: var(--color-grey);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 35px 12px 0;
+}
+
+.container-button-send {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 47px 0 20px;
+    width: 244px;
+    margin: auto;
+}
+
+.container-button-reset {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 244px;
+    margin: auto;
+}
+
+.button-send {
+    background-color: var(--color-red-guava);
+    color: var(--color-whithe);
+    border: none;
+    width: 244px;
+    height: 67px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;    
+}
+
+.button-reset {
+    background-color: var(--color-whithe);
+    color: var(--color-red-guava);
+    border: none;
+    width: 244px;
+    height: 67px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;        
 }
 
 /*.menu-list {    
