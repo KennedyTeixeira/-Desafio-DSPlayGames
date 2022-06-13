@@ -2,10 +2,12 @@
 
 :root {
     --color-green-life: #38AF90;
-    --color-whithe: #FFF;
+    --color-whithe: #FFFFFF;
     --color-grey: #797979;
+    --color-grey-light: #F0F0F0;
     --color-red-guava: #DD7E92;
-    --color-darck-light:  #383838;
+    --color-dark-light:  #383838;
+    --color-dark: #000000;
 }
 
 * {
@@ -20,9 +22,19 @@ header {
     height: 90px;
     width: 100%;
     padding: 14px 10px;
+    box-shadow: 0 0 0.4em var(--color-dark);   
 }
 
-.menu-container {  
+a {
+    text-decoration: none;   
+}
+
+h2 {
+    color: var(--color-grey);
+}
+
+.menu-container {
+    color: var(--color-whithe);
     width: 100%;    
     max-width: 1200px;
     margin: 0 auto;  
@@ -31,12 +43,86 @@ header {
     align-items: center;    
 }
 
+.menu-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .menu-list {
     display: none;
 }
 
 .image-profile {
     height: 62px;    
+}
+
+#news {
+    background-color: var(--color-whithe);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6px;
+}
+
+.news-title {
+    color: var(--color-grey);
+    padding: 40px 0 8px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.news-card {
+    background-color: var(--color-grey-light);
+    border-radius: 8px;
+    margin: 0 10px;
+    margin-bottom: 28px;
+    box-shadow: 0 0 0.4em var(--color-dark);   
+}
+
+.card-title {
+    color: var(--color-green-life);
+    padding: 16px 13px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.news-summary {
+    color: var(--color-grey);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0 13px;   
+}
+
+.news-date {
+    color: var(--color-green-life);
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0 13px;
+}
+
+.news-text {
+    color: var(--color-grey);
+    font-size: 10px;
+    font-weight: 400;
+    padding: 13px 13px;
+}
+
+.more-news {
+    color: var(--color-red-guava);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 13px;
+}
+
+.button-news {    
+    background-color: var(--color-red-guava);
+    color: var(--color-whithe);
+    border: none;
+    width: 244px;
+    height: 67px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
 }
 
 /*.menu-list {    
