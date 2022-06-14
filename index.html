@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav class="menu-container">
+      <nav id="menu">
         <h1 class="menu-name">DSPlayGames</h1>
         <ul class="menu-list">
           <li><a href="#news">Notícias</a></li>
@@ -22,14 +22,15 @@
       </nav>
     </header>
     <main>
-      <section id="news">
-        <h2 class="name-section">Últimas notícias</h2>
+      <section id="news" class="container">
+        <h2 class="title-section">Últimas notícias</h2>
         <div class="news-card">
           <h3 class="news-title">Título principal da notícia</h3>
           <p class="news-summary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
             vitae ducimus aperiam.
           </p>
+          <div class="line"></div>
           <p class="news-date">23/02/2022</p>
           <p class="news-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
@@ -58,6 +59,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
             vitae ducimus aperiam.
           </p>
+          <div class="line"></div>
           <p class="news-date">23/02/2022</p>
           <p class="news-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
@@ -81,14 +83,14 @@
           <a class="more-news" href="#">Ler mais...</a>
         </div>
         <form action="#">
-          <input class="button-news" type="submit" value="Carregar mais" />
+          <input class="button color-news" type="submit" value="Carregar mais" />
         </form>
       </section>
-      <section id="games">
-        <h2 class="title-card-games">Jogos</h2>
-        <div class="card-games">
+      <section id="games" class="container">
+        <h2 class="title-card">Jogos</h2>
+        <div class="card-games container">
           <img src="img/game-1.png" alt="" />
-          <div class="card-game-description">
+          <div class="card-game-description container">
             <h3 class="game-title">Horizon Forbidden West</h3>
             <p class="game-description">
               <span>De</span>Sony Interactive Entertainment
@@ -96,9 +98,9 @@
             <p class="game-score">9.7</p>
           </div>
         </div>
-        <div class="card-games">
+        <div class="card-games container">
           <img src="img/game-1.png" alt="" />
-          <div class="card-game-description">
+          <div class="card-game-description container">
             <h3 class="game-title">Horizon Forbidden West</h3>
             <p class="game-description">
               <span>De</span>Sony Interactive Entertainment
@@ -106,9 +108,9 @@
             <p class="game-score">9.7</p>
           </div>
         </div>
-        <div class="card-games">
+        <div class="card-games container">
           <img src="img/game-1.png" alt="" />
-          <div class="card-game-description">
+          <div class="card-game-description container">
             <h3 class="game-title">Horizon Forbidden West</h3>
             <p class="game-description">
               <span>De</span>Sony Interactive Entertainment
@@ -117,8 +119,8 @@
           </div>
         </div>
       </section>
-      <section id="sign-up">
-        <h2 class="name-section">Faça sua inscrição</h2>
+      <section id="sign-up" class="container">
+        <h2 class="title-section">Faça sua inscrição</h2>
         <div class="ctrl-consoles">
           <form class="ctrl-consoles-container" action="#">
             <div class="user-name-container">
@@ -156,11 +158,11 @@
               <input type="checkbox" name="ctrl-receipt" id="ctrl-send-email" />
               <label for="ctrl-receipt">Desejo receber novidades.</label>
             </div>
-            <div class="container-button-send">
-              <input class="button-send" type="submit" value="Enviar" />
+            <div class="button-margin container">
+              <input class="button color-send" type="submit" value="Enviar" />
             </div>
-            <div class="container-button-reset">
-              <input class="button-reset" type="reset" value="Apagar" />
+            <div class="button-margin container">
+              <input class="button color-reset" type="reset" value="Apagar" />
             </div>
           </form>
         </div>
@@ -174,11 +176,11 @@
             <li class="social-company"><a href="#">/dsplaygames</a></li>
           </ul>
         </div>
-        <div class="company-copyright">
+        <div class="company-copyright container">
           <p>DS Play Games Ltda. Todos direitos</p>
           <p>reservados</p>
         </div>
-        <div class="company-legal-container">
+        <div class="company-legal-margin container">
           <div>
             <a class="company-legal" href="#">Política de privacidade</a>
           </div>
