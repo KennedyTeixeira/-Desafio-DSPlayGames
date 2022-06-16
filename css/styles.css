@@ -26,7 +26,8 @@ header {
     height: 90px;
     width: 100%;
     padding: 14px 10px;
-    box-shadow: 0 0 0.4em var(--color-dark);   
+    box-shadow: 0 0 0.4em var(--color-dark);
+    position: fixed;
 }
 
 a {
@@ -55,7 +56,7 @@ li {
 .title-section {
     color: var(--color-grey);
     padding: 40px 0 8px 0;
-    font-size: 24px;
+    font-size: 1.125rem;
     font-weight: 700;
 }
 
@@ -65,11 +66,21 @@ li {
     font-size: 18px;
     font-weight: 700;
     border: none;
-    border-radius: 8px;          
+    border-radius: 8px;
+    cursor: pointer;          
 }
 
 .button-margin {
-    margin: 37px 0 0;
+    margin: 30px;
+}
+
+.text-box {
+    border: 1px solid var(--color-grey);               
+    width: 268px;
+    height: 50px;    
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
 }
 
 /* CLASSES, IDS */
@@ -85,26 +96,38 @@ li {
 }
 
 .menu-name {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
+}
+
+.menu-list-container {
+    display: flex;
+    align-items: center;
 }
 
 .menu-list {
     display: none;
+    font-size: 14px;           
 }
 
-.picturi-profile {
-    height: 62px;    
+.menu-list li {
+    margin: 0 30px 0 0;    
+}
+
+.menu-list a {
+    color: var(--color-whithe);
 }
 
 #news {
     background-color: var(--color-whithe);    
     margin-top: 2px;
+    padding-top: 90px;
 }
 
 .news-card {
     width: 290px;
-    height: 493px;
+    height: 510px;
+    max-width: 1200px;
     background-color: var(--color-grey-light);
     border-radius: 8px;
     margin: 0 10px;
@@ -126,8 +149,7 @@ li {
     padding: 0 13px;       
 }
 
-.line {
-    width: 277px;
+.line {    
     border: 1px solid var(--color-green-life);
     margin: 10px;
 }
@@ -165,16 +187,23 @@ li {
 
 .title-card {
     color: var(--color-green-life);
-    font-size: 24px;
+    font-size: 1.7rem;
     font-weight: 700;
-    margin: 40px 0 27px;
+    margin: 40px 0 0;
+}
+
+.card-games-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card-games { 
     width: 290px;    
     box-shadow: 0 0 0.4em var(--color-dark);
     border-radius: 8px;
-    margin-bottom: 27px;                  
+    margin: 20px;
+
 }
 
 .card-games img {    
@@ -218,34 +247,17 @@ li {
 .ctrl-consoles {
     width: 290px;
     height: 600px;
+    max-width: 790px;
     background-color: var(--color-grey-light);
     border-radius: 8px;            
 }
 
-.user-name-container {
+.user-name-container {    
     padding: 52px 12px 0;
 }
 
-.user-name {
-    border: 1px solid var(--color-grey);               
-    width: 268px;
-    height: 50px;    
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 4px;        
-}
-
-.user-email-container {
+.user-email-container {    
     padding: 20px 12px 20px;
-}
-
-.user-email {
-    border: 1px solid var(--color-grey);               
-    width: 268px;
-    height: 50px;
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 4px;                   
 }
 
 .games-container {
@@ -262,6 +274,12 @@ li {
     padding: 35px 12px 0;
 }
 
+.button-container-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .color-send {
     background-color: var(--color-red-guava);
     color: var(--color-whithe)        
@@ -274,15 +292,13 @@ li {
 
 #company {
     background-color: var(--color-dark-light);
-    width: 303px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 303px;    
     margin: 0 auto;      
 }
 
-.company-container {
-    margin: 27px 0 37px;
+.social-container {
+    margin: 28px 0 37px;
+
 }
 
 .social-company a {
@@ -298,12 +314,128 @@ li {
     font-weight: 400;
 }
 
+.company-legal-container {    
+    margin: 0 0 37px;
+}
+
 .company-legal {
     color: var(--color-whithe);
     font-size: 14px;
     font-weight: 400;
 }
 
-.company-legal-margin {    
-    margin: 0 0 37px;
+@media (min-width: 325px) {    
+    
+    #company {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media (min-width: 390px) {
+    
+    .news-card {
+        width: 80%;
+        height: 100%;
+    }
+    
+    .line {
+        width: 96%;
+    }
+
+    .news-text {
+        font-size: 12px;
+    }
+
+    .ctrl-consoles {
+        width: 80%;
+        height: 100%;        
+    }
+    
+    #company {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media (min-width: 576px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    .menu-list {
+        display: flex;                   
+    }   
+    
+    .news-text {
+        font-size: 14px;
+    }
+
+    .text-box {
+        width: 80%;
+    }   
+
+}
+
+@media (min-width: 768px) {
+
+    html {
+        font-size: 20px;
+    }
+
+    .news-title {
+        font-size: 19px;
+    }
+
+    .news-summary {
+        font-size: 14px;
+    }
+
+    #company {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 37px;       
+    }
+    
+    .social-container {
+        margin: 28px 0 37px;
+    }
+    
+    .company-copyright {
+        margin: 28px 0 37px;
+    
+    }
+    
+    .company-legal-container {
+        margin: 28px 0 37px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    html {
+        font-size: 25px;
+    }
+
+    .news-title {
+        font-size: 24px;
+    }
+
+    .news-summary {
+        font-size: 16px;
+    }
+
+    .company-copyright {
+        flex-direction: row;
+    }
+
+    .small-margin {
+        margin: 0 0 0 3px;
+    }
+
 }

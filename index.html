@@ -11,13 +11,15 @@
     <header>
       <nav id="menu">
         <h1 class="menu-name">DSPlayGames</h1>
-        <ul class="menu-list">
-          <li><a href="#news">Notícias</a></li>
-          <li><a href="#games">Jogos</a></li>
-          <li><a href="#sign-up">Inscreva-se</a></li>
-        </ul>
-        <div class="picturi-profile">
-          <img src="img/user.svg" alt="Perfil do Usuário" />
+        <div class="menu-list-container">
+          <ul class="menu-list">
+            <li><a href="#news">Notícias</a></li>
+            <li><a href="#games">Jogos</a></li>
+            <li><a href="#sign-up">Inscreva-se</a></li>
+          </ul>
+          <div class="picturi-profile">
+            <img src="img/user.svg" alt="Perfil do Usuário" />
+          </div>
         </div>
       </nav>
     </header>
@@ -83,57 +85,63 @@
           <a class="more-news" href="#">Ler mais...</a>
         </div>
         <form action="#">
-          <input class="button color-news" type="submit" value="Carregar mais" />
+          <input
+            class="button color-news"
+            type="submit"
+            value="Carregar mais"
+          />
         </form>
       </section>
       <section id="games" class="container">
         <h2 class="title-card">Jogos</h2>
-        <div class="card-games container">
-          <img src="img/game-1.png" alt="" />
-          <div class="card-game-description container">
-            <h3 class="game-title">Horizon Forbidden West</h3>
-            <p class="game-description">
-              <span>De</span>Sony Interactive Entertainment
-            </p>
-            <p class="game-score">9.7</p>
+        <div class="card-games-main">
+          <div class="card-games container">
+            <img src="img/game-1.png" alt="" />
+            <div class="card-game-description container">
+              <h3 class="game-title">Horizon Forbidden West</h3>
+              <p class="game-description">
+                <span>De</span>Sony Interactive Entertainment
+              </p>
+              <p class="game-score">9.7</p>
+            </div>
           </div>
-        </div>
-        <div class="card-games container">
-          <img src="img/game-1.png" alt="" />
-          <div class="card-game-description container">
-            <h3 class="game-title">Horizon Forbidden West</h3>
-            <p class="game-description">
-              <span>De</span>Sony Interactive Entertainment
-            </p>
-            <p class="game-score">9.7</p>
+          <div class="card-games container">
+            <img src="img/game-1.png" alt="" />
+            <div class="card-game-description container">
+              <h3 class="game-title">Horizon Forbidden West</h3>
+              <p class="game-description">
+                <span>De</span>Sony Interactive Entertainment
+              </p>
+              <p class="game-score">9.7</p>
+            </div>
           </div>
-        </div>
-        <div class="card-games container">
-          <img src="img/game-1.png" alt="" />
-          <div class="card-game-description container">
-            <h3 class="game-title">Horizon Forbidden West</h3>
-            <p class="game-description">
-              <span>De</span>Sony Interactive Entertainment
-            </p>
-            <p class="game-score">9.7</p>
-          </div>
+          <div class="card-games container">
+            <img src="img/game-1.png" alt="" />
+            <div class="card-game-description container">
+              <h3 class="game-title">Horizon Forbidden West</h3>
+              <p class="game-description">
+                <span>De</span>Sony Interactive Entertainment
+              </p>
+              <p class="game-score">9.7</p>
+            </div>
+          </div>          
         </div>
       </section>
       <section id="sign-up" class="container">
         <h2 class="title-section">Faça sua inscrição</h2>
         <div class="ctrl-consoles">
           <form class="ctrl-consoles-container" action="#">
-            <div class="user-name-container">
+            <div class="user-name-container container">
               <input
-                class="user-name"
+                class="text-box"
                 type="text"
                 placeholder="Nome completo"
                 style="text-align: center"
               />
             </div>
-            <div class="user-email-container">
+            <div class="user-email-container container">
               <input
-                class="user-email"
+                class="text-box"
                 type="email"
                 placeholder="Email"
                 style="text-align: center"
@@ -158,29 +166,31 @@
               <input type="checkbox" name="ctrl-receipt" id="ctrl-send-email" />
               <label for="ctrl-receipt">Desejo receber novidades.</label>
             </div>
-            <div class="button-margin container">
-              <input class="button color-send" type="submit" value="Enviar" />
-            </div>
-            <div class="button-margin container">
-              <input class="button color-reset" type="reset" value="Apagar" />
-            </div>
+            <div class="button-container-main">
+              <div class="button-margin container">
+                <input class="button color-send" type="submit" value="Enviar" />
+              </div>
+              <div class="button-margin container">
+                <input class="button color-reset" type="reset" value="Apagar" />
+              </div>
+            </div>            
           </form>
         </div>
       </section>
     </main>
     <footer>
-      <nav id="company">
-        <div class="company-container">
-          <ul>
-            <li class="social-company"><a href="#">@dsplaygames</a></li>
-            <li class="social-company"><a href="#">/dsplaygames</a></li>
+      <div id="company" class="container">
+        <nav class="social-container">
+          <ul class="social-company">
+            <li><a href="#">@dsplaygames</a></li>
+            <li><a href="#">/dsplaygames</a></li>
           </ul>
-        </div>
+        </nav>
         <div class="company-copyright container">
           <p>DS Play Games Ltda. Todos direitos</p>
-          <p>reservados</p>
+          <p class="small-margin">reservados</p>          
         </div>
-        <div class="company-legal-margin container">
+        <div class="company-legal-container container">
           <div>
             <a class="company-legal" href="#">Política de privacidade</a>
           </div>
@@ -188,7 +198,7 @@
             <a class="company-legal" href="#">Termos de uso</a>
           </div>
         </div>
-      </nav>
+      </div>      
     </footer>
   </body>
 </html>
