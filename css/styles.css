@@ -26,8 +26,7 @@ header {
     height: 90px;
     width: 100%;
     padding: 14px 10px;
-    box-shadow: 0 0 0.4em var(--color-dark);
-    position: fixed;
+    box-shadow: 0 0 0.4em var(--color-dark);    
 }
 
 a {
@@ -120,8 +119,7 @@ li {
 
 #news {
     background-color: var(--color-whithe);    
-    margin-top: 2px;
-    padding-top: 90px;
+    margin-top: 2px;    
 }
 
 .news-card {
@@ -376,7 +374,15 @@ li {
 
     .text-box {
         width: 80%;
-    }   
+    }
+    
+    header {        
+        position: fixed;
+    }
+
+    #news {        
+        padding-top: 90px;
+    }
 
 }
 
